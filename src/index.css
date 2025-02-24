@@ -1,3 +1,7 @@
+:root {
+  --bg-primary: #f8eeff;
+}
+
 body {
-  background-color: red;
+  background-color: var(--bg-primary);
 }
