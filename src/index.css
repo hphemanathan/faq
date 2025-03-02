@@ -1,8 +1,25 @@
 :root {
   --bg-primary: #f8eeff;
+  --spacing: 8px;
 }
 
 body {
   background: url(../src/assets/background.png) no-repeat, var(--bg-primary);
   background-size: contain;
+  display: grid;
+  place-content: center;
+}
+
+.faqCard {
+  width: 327px;
+  background-color: white;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.heading_Icon {
+  margin-right: calc(var(--spacing) * 3);
 }
