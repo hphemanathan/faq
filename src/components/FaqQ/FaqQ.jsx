@@ -5,13 +5,27 @@ import FaqA from '../FaqA/FaqA';
 
 
 function FaqQ({question, answer}) {
+  const [open, setOpen] = React.useState(false);
   return (
     <div>
       <div className='ques'>
         <p>{question}</p>
-        <img onClick={} src='src/assets/icon-minus.svg' alt='Minus Icon' />
+       {
+        open ?  <img
+          onClick={() => setOpen(false)}
+          src='src/assets/icon-minus.svg'
+          alt='Minus Icon'
+        />
+        :
+         <img
+          onClick={() => setOpen(true)}
+          src='src/assets/icon-plus.svg'
+          alt='Minus Icon'
+        />
+        
+       }
       </div>
-      <FaqA answer={answer} />
+      {open && <FaqA answer={answer} />}
     </div>
   );
 }
