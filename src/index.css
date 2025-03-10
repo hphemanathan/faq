@@ -3,6 +3,15 @@
   --spacing: 8px;
 }
 
+@keyframes slide {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
 body {
   background: url(../src/assets/background.png) no-repeat, var(--bg-primary);
   background-size: contain;
@@ -28,4 +37,10 @@ body {
 
 .heading_Icon {
   margin-right: calc(var(--spacing) * 3);
+}
+
+.FaqA {
+  transition: slide 750ms;
+  transition-delay: 500ms;
+  animation: slide 750ms;
 }

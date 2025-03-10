@@ -25,7 +25,7 @@ function FaqQ({question, answer}) {
         
        }
       </div>
-      {open && <FaqA answer={answer} />}
+      {open && <FaqA key={question} answer={answer} />}
     </div>
   );
 }

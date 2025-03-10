@@ -1,7 +1,7 @@
 import React from 'react';
 
 function FaqA({answer}) {
-  return <div>
+  return <div className='FaqA'>
     <p>{answer}</p>
   </div>;
 }
